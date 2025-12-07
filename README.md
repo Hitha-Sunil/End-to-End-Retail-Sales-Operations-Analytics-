@@ -1,137 +1,128 @@
+# A Realistic, Business-Focused Retail Analytics Project
+# 📁 Project Overview
 
-# A Realistic, Business-Focused Data Analytics Project
- # 📁  Project Overview
+This project simulates and analyzes a real-world retail business using Python + Power BI. It demonstrates a complete analytics workflow, including:
 
-This project simulates and analyzes a real-world retail business using Python.
-The goal is to demonstrate complete data analytics workflows, including:
+Synthetic dataset creation (100,000+ records)
 
-Synthetic dataset creation (50,000+ records)
+Sales & revenue analysis
 
-Sales analysis
+Inventory performance tracking
 
-Inventory performance
-
-Customer insights
+Customer behavior insights
 
 Delivery & operations analytics
 
-Forecasting (sales demand prediction)
+Category-wise sales forecasting (Prophet)
 
-Data visualization
+Interactive Power BI dashboards
 
-Business insights & recommendations
+Actionable business recommendations
 
-This project is designed to be interview-ready, showing strong analytical thinking and practical business understanding.
+Designed to be interview-ready, it highlights strong analytical thinking and BI skills.
 
 # 🧠 Key Objectives
 
-✔ Build a realistic end-to-end dataset for retail
-✔ Perform deep exploratory data analysis (EDA)
-✔ Identify sales trends & seasonality
-✔ Understand customer behavior
-✔ Analyze delivery delays & operational bottlenecks
-✔ Evaluate inventory health and stock-out risks
-✔ Predict future demand
-✔ Present actionable business insights
+✔ Build a realistic end-to-end retail dataset
+✔ Perform thorough exploratory data analysis (EDA)
+✔ Identify daily, weekly & monthly sales trends
+✔ Understand customer value & spending patterns
+✔ Detect delivery delays & operational bottlenecks
+✔ Evaluate stock health & potential stock-out risks
+✔ Forecast future category-wise demand
+✔ Present insights visually using Power BI
 
- # 🗂 Dataset Created
+# 🗂 Datasets Created
 
-The project generates 4 realistic datasets:
+The Python script generates 4 fully synthetic but realistic datasets:
 
 Dataset	Description	Rows
-sales.csv	All transactions, pricing, quantities, timestamps	~50k
-customers.csv	Customer demographics & engagement	~10k
-inventory.csv	Stock levels, reorder quantities, warehouse info	~1000
-operations.csv	Delivery times, process durations, status	~50k
+sales_clean.csv	Daily transactions, stores, pricing, units sold	~30k–40k
+customers_clean.csv	Customer type, region, spend, orders	~20k
+inventory_clean.csv	Stock levels, reorder points, supplier data	~300
+operations_clean.csv	Delivery durations, order dates, delays	~30k–40k
 
-All datasets are fully synthetic but modeled after real retail businesses.
+These datasets feed directly into the Power BI dashboard.
 
- # 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-Python Libraries Used:
+Python: pandas, numpy, faker, seaborn, matplotlib, prophet
+Power BI: Data modeling, KPIs, drill-through analytics, interactive visuals
 
-pandas
+# 📈 Analysis Performed
+# 🔹 1. Sales Analytics
 
-numpy
+Revenue & units sold trends
 
-faker
+Monthly patterns
 
-matplotlib
+Top-performing products & categories
 
-seaborn
+Store-wise performance
 
-scikit-learn
+#🔹 2. Inventory Analytics
 
-statsmodels / prophet (forecasting)
+Stock-level distribution
 
- # 📈 Analysis Performed
-🔹 1. Sales Analytics
+Reorder alerts
 
-Revenue trends
+High-revenue items with low stock
 
-Daily/weekly/monthly patterns
+Supplier overview
 
-Top-selling & underperforming products
-
-Customer contribution analysis
-
-🔹 2. Inventory Analytics
-
-Stock utilization
-
-Low-stock alerts
-
-Warehouse performance
-
-Reorder point analysis
-
-🔹 3. Customer Insights
-
-Lifetime value
-
-Order frequency
+# 🔹 3. Customer Insights
 
 High-value customer identification
 
-🔹 4. Operations Analytics
+Spend distribution
 
-Delivery delay detection
+Customer type & region patterns
 
-Process duration distribution
+# 🔹 4. Operations Analytics
 
-Region-wise bottlenecks
+On-time vs delayed deliveries
 
-On-time vs delayed delivery rates
+Processing duration patterns
 
-🔹 5. Forecasting
+Product-wise delay bottlenecks
 
-Sales demand prediction using Prophet / ARIMA
+#🔹 5. Forecasting
 
-Trend + seasonality decomposition
+30-day future demand forecast per category
+
+Trend + seasonality detection using Prophet
 
 # 📊 Visualizations
 
-The Python script includes multiple visualizations:
+Python generates multiple analysis charts:
 
-Sales trend line
+Daily sales trend
 
-Top 10 products bar chart
+Top 10 products
 
 Inventory distribution
 
-Delayed vs completed orders
+Delay breakdown
 
-Forecasted future sales
+Forecast curves
 
-Heatmaps, histograms & boxplots
+Power BI provides an interactive dashboard displaying:
 
-All charts are generated automatically.
+Sales overview
 
-#💡 Key Business Insights (Generated from the Data)
+Category & store performance
 
-✔ 20–25% of products drive most revenue (Pareto pattern)
-✔ Specific regions show consistently higher delay rates
-✔ Several SKUs hit low-stock levels → risk of stockouts
-✔ High-value customers generate 40–60% of total revenue
-✔ Sales show strong weekday patterns + seasonal spikes
-✔ Inventory needs optimization → oversupply on slow items
+Inventory health KPI
+
+Customer insights
+
+Operational performance
+
+# 💡 Key Business Insights
+
+✔ Top categories contribute majority of revenue
+✔ Certain products show recurring delivery delays
+✔ Several SKUs are at risk of stockout → reorder needed
+✔ High-value customers drive a large share of total revenue
+✔ Sales show monthly seasonality & peak patterns
+✔ Inventory imbalance observed → some items overstocked
